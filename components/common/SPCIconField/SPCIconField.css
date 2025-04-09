@@ -1,0 +1,32 @@
+.icon-field {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.icon-field-icon {
+    width: auto;
+    height: 65%;
+    aspect-ratio: 1;
+    margin-right: 10px;
+}
+
+.icon-filed-input {
+    flex-grow: 1;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    columns: var(--dark-text);
+    width: 100%;
+}
+
+.icon-filed-input::placeholder {
+    color: black;
+    opacity: 0.45;
+}
+
+.icon-filed-input:focus,
+.icon-filed-input:active {
+    outline: none;
+}

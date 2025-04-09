@@ -1,0 +1,58 @@
+.staging-preview-img {
+    max-height: 400px;
+    margin: 16px;
+    border-radius: 36px;
+    object-fit: cover;
+    transition: opacity 1s;
+}
+
+.staging-dialog {
+    flex-direction: column;
+    overflow: auto;
+    max-height: 90%;
+    width: 45%;
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--primary);
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+
+.staging-button {
+    margin: 0px 7%;
+    transition: box-shadow 0.3s opacity 0.3s;
+}
+
+.staging-button:hover:not(:disabled) {
+    opacity: 0.9;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.staging-button-content {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+.staging-button-icon {
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+    fill: white;
+}
+
+.staging-error {
+    color: var(--error);
+    background-color: rgb(229, 198, 203);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 0px 4% 10px 4%;
+}

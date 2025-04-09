@@ -1,0 +1,7 @@
+.listing-search-bar {
+    background-color: white;
+    flex-grow: 1;
+    height: 48px;
+    border-radius: 24px;
+    padding: 0px 8px;
+}

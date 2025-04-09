@@ -1,0 +1,67 @@
+.conversation-view {
+    display: flex;
+    height: 120px;
+    margin: 6px 14px;
+    margin-right: 8px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.conversation-view:hover {
+    background-color: var(--dark-purple-trn);
+}
+
+.conversation-view.selected {
+    background-color: var(--dark-purple);
+}
+
+
+.conversation-view.has-new {
+    font-weight: 600;
+    color: var(--light-primary);
+}
+
+
+.conversation-image {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1;
+    border-radius: 25px;
+    padding: 14px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.conversation-view-info {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px;
+    margin-right: 14px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.conversation-view-info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.conversation-view-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.conversation-view-description {
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.conversation-view-time {
+    color: var(--light-background-trn);
+    vertical-align: bottom;
+    margin-top: auto;
+    align-self: flex-end;
+}

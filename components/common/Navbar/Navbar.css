@@ -1,0 +1,148 @@
+header {
+    width: 100%;
+    background: var(--dark-background); /* Dark background for the navbar */
+    height: 80px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: visible;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    width: 78%;
+    margin-right: 12px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-link {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: text-decoration 0.3s;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+.user-menu-container {
+    position: relative;
+    margin-right: 24px;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.user-menu-button {
+    display: flex;
+    user-select: none;
+    background-color: var(--dark-purple);
+    padding: 8px 16px;
+    font-size: 18px;
+    text-wrap: nowrap;
+    border-radius: 12px;
+    transition: background-color 0.2s;
+    margin-top: 12px;
+}
+
+.user-menu-button:hover {
+    background-color: var(--purple);
+}
+
+.user-menu-button-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    fill: white;
+}
+
+.menu-gap {
+  height: 12px;
+}
+
+.user-menu-dropdown {
+    min-width: 200px;
+    right: 0px;
+    color: var(--dark-text);
+    background-color: white;
+    text-wrap: nowrap;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(53, 53, 53, 0.312);
+    padding: 6px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s;
+}
+
+.user-menu-dropdown.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.user-menu-dropdown p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: background-color 0.2s;
+  user-select: none;
+}
+
+.menu-item.logout {
+  color: var(--error);
+  fill: var(--error) !important;
+}
+
+.menu-item:hover {
+  background-color: var(--light-background);
+}
+
+.menu-item-icon {
+  width: 26px;
+  height: 26px;
+  fill: var(--dark-text);
+  margin-right: 6px;
+}
+
+.menu-item-icon.stroke {
+  stroke: var(--dark-text);
+  fill: transparent;
+}
+
+.menu-item.logout .menu-item-icon {
+  fill: var(--error) !important;
+}
+
+.login-container {
+  position: relative;
+  margin-right: 24px;
+  margin-left: auto;
+  align-items: flex-start;
+  text-wrap: nowrap;
+}

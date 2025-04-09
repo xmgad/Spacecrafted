@@ -1,0 +1,7 @@
+.spinner-container {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect center alignment */
+    display: flex; /* Keeps the spinner aligned properly */
+  }

@@ -1,0 +1,74 @@
+.signup-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.signup-dialog-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-bottom: 8px;
+}
+
+.signup-dialog-container {
+    flex-direction: row;
+    width: 45%;
+}
+
+.signup-dialog-img {
+    height: auto;
+    width: 50%;
+    aspect-ratio: 1;
+    padding: 3%;
+    object-fit: scale-down;
+}
+
+.signup-dialog-content {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0px;
+}
+
+.signup-dialog-item-container {
+    padding: 8px 12px;
+}
+
+.signup-dialog-content-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.signup-dialog-content-item p {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.signup-dialog-check {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.signup-dialog-register {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.signup-dialog-login {
+    font-size: 15px;
+    margin: 0px 12px;
+    margin-top: auto;
+}
+
+.signup-dialog-login-link {
+    margin-left: 6px;
+    font-weight: 600;
+    color: var(--primary);
+}

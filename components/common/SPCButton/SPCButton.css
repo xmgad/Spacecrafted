@@ -1,0 +1,56 @@
+.spc-button {
+    display: flex;
+    padding: 0 20px;
+    min-height: 44px;
+    border: 2px solid transparent;
+    font-family: "Poppins", sans-serif;
+    border-radius: 22px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Needed for absolute positioning of children */
+}
+
+.spc-button:hover {
+    opacity: 0.8;
+}
+
+.spc-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.spc-button.loading:disabled {
+    opacity: 1;
+}
+
+.spc-button.outlined {
+    background-color: transparent;
+    border-color: inherit; /* match border color to text color*/
+}
+
+.spc-button.text {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+/* Icon */
+
+.spc-button-icon {
+  height: 22px;
+  width: 22px;
+}
+
+.spc-button-icon.left {
+  margin-right: 6px;
+}
+
+.spc-button-icon.right {
+  margin-left: 6px;
+}

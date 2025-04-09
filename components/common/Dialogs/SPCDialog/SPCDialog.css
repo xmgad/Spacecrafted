@@ -1,0 +1,19 @@
+.spc-dialog {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-title {
+    margin-bottom: 10px;
+}
+
+.dialog-buttons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dialog-buttons .spc-button {
+    margin-left: 12px;
+}

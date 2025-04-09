@@ -1,0 +1,160 @@
+.listing-view {
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    width: 100%;
+    height: 200px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 25px 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.listing-image {
+    width: 20%;
+    height: auto;
+    aspect-ratio: 1.5;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.lv-content {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 12px 12px 0px 12px;
+    margin-left: 18px;
+    overflow: hidden;
+}
+
+.lv-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.lv-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #350b48;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.lv-title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lv-title-link:hover {
+    text-decoration: underline;
+}
+
+.lv-desc {
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.lv-price {
+    font-size: 18px;
+    font-weight: 600;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    text-align: end;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: var(--dark-gradient-hrz);
+}
+
+.lv-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: 15%;
+    height: 100%;
+}
+
+/* Location */
+
+.lv-location {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.lv-location-content {
+    display: flex;
+    align-items: center;
+}
+
+.lv-location-icon {
+    width: 22px;
+    height: 22px;
+    fill: var(--primary);
+}
+
+.lv-location-name {
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 8px;
+    color: var(--primary);
+}
+
+/* Buttons */
+
+.lv-buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.lv-button {
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    background-color: rgba(184, 146, 197, 0.209);
+    border-radius: 22px;
+    /* box-shadow: 0px 0 10px rgba(0,0,0,0.2); */
+    transition: box-shadow 0.3s, fill 0.3s, opacity 0.3s;
+    cursor: pointer;
+}
+
+.lv-button:hover {
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Fav */
+
+.lv-fav-button {
+    fill: transparent;
+    stroke: var(--error);
+    opacity: 1;
+}
+
+.lv-fav-button:hover {
+    fill: var(--light-primary);
+}
+
+.lv-fav-button.selected {
+    fill: var(--error);
+}
+
+.lv-fav-button.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.lv-edit-button {
+    margin-right: 12px;
+    fill: var(--dark-text);
+}

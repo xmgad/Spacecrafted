@@ -1,0 +1,113 @@
+.location-search {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.location-search-input-container {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    height: 38px;
+    border-radius: 19px;
+    overflow: hidden;
+    padding: 0px 8px;
+    align-items: center;
+    box-shadow: 0px 2px 6px #3d3d3d2a
+}
+
+.location-search-field {
+    flex-grow: 1;
+}
+
+.location-search-end-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 0px 10px;
+}
+
+.location-search-clear {
+    width: 20px;
+    height: 20px;
+    fill: var(--dark-purple-trn);
+}
+/* Results list */
+
+.location-search-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--error-light);
+    color: var(--error);
+    height: 75px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin-top: 6px;
+    border: 1px solid var(--error);
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 6px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px #3d3d3d2a;
+    padding-top: 4px;
+    overflow: auto;
+    min-height: 60px;
+    transition: opacity 0.2s;
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #5e2b70;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+
+.result-item {
+    display: flex;
+    font-size: 14px;
+    padding: 4px 6px;
+    margin: 0px 8px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    user-select: none;
+}
+
+.result-item p {
+    width: 100%;
+}
+
+.result-item:hover {
+    background-color: var(--light-background-trn);
+}
+
+.location-item-icon {
+    fill: var(--light-blue);
+    width: 5%;
+    height: 18px;
+    margin-right: 6px;
+}
+
+.empty-results {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--error);
+    opacity: 0.4;
+}

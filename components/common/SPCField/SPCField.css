@@ -1,0 +1,35 @@
+.spc-field-container {
+  margin-bottom: 20px;
+}
+
+.spc-field-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.spc-field-input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid;
+}
+
+.spc-field-icon {
+  margin-right: 10px;
+}
+
+.spc-field-input {
+  flex-grow: 1;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 8px 0;
+}
+
+.text-field::placeholder {
+  color: #ccc; 
+}

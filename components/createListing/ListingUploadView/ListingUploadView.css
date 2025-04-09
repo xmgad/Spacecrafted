@@ -1,0 +1,91 @@
+.listing-upload {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listing-upload-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.list-upload-preview-container {
+  display: inline-block;
+}
+
+.listing-image-options {
+  display: flex;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.listing-image-options.small {
+  top: 8px;
+  right: 8px;
+}
+
+.listing-image-options:hover {
+  opacity: 1;
+}
+
+.listing-image-delete-icon {
+  padding: 8px;
+  background-color: white;
+  border-radius: 30px;
+  height: 45px;
+  width: 45px;
+  margin-left: 8px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.listing-image-delete-icon.small {
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  padding: 4px;
+  border-radius: 19px;
+  margin-left: 4px;
+}
+
+.listing-image-delete-icon:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.upload-placeholder {
+  width: 100px;
+  height: 100px;
+  border: 2px dashed var(--light-blue);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.other-images {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cover-image {
+  aspect-ratio: 1.75;
+  width: 100%;
+  height: auto;
+}
+
+.add-icon {
+  width: 20%;
+  height: 20%;
+  stroke: var(--light-blue);
+}

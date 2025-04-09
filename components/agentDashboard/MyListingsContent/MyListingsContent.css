@@ -1,0 +1,26 @@
+.my-listings-content {
+    margin-top: 50px;
+    padding: 0px 50px;
+    flex-grow: 1;
+}
+
+.no-listings {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-listings p {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #280638;
+    opacity: 0.8;
+}
+
+.listings-header-create {
+    margin-left: auto;
+    margin-right: 50px;
+}

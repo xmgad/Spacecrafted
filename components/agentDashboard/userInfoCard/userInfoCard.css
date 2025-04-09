@@ -1,0 +1,56 @@
+.info-card {
+    color: var(--dark-text);
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 32px;
+}
+
+/* HEADER */
+
+.card-header {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.info-pfp {
+    width: 25%;
+    aspect-ratio: 1;
+}
+
+.card-name-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.card-username {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.card-title {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* CONTENT */
+
+.card-section {
+    margin: 12px 0px 0px 10px;
+    font-size: 14px;
+}
+
+.contact-section {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary);
+    margin-right: 8px;
+}

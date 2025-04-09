@@ -1,0 +1,42 @@
+.multi-option-view {
+    display: flex;
+    align-items: center;
+}
+
+.option-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--grey);
+    flex-grow: 1;
+    text-align: center;
+    padding: 0px 4px;
+    min-height: 40px;
+    user-select: none;
+    font-weight: 500;
+    color: var(--grey);
+    transition: all 0.2s;
+    border-right: 1px solid var(--grey);
+    border-left: 1px solid var(--grey);
+}
+
+.option-block.start {
+    border-radius: 12px 0px 0px 12px;
+    border-left: 2px solid var(--grey);
+}
+
+.option-block.end {
+    border-radius: 0px 12px 12px 0px;
+    border-right: 2px solid var(--grey);
+}
+
+.option-block:hover {
+    border: 2px solid var(--primary-trn);
+    color: var(--primary-trn);
+}
+
+.option-block.selected {
+    border: 2px solid var(--primary);
+    background-color: var(--light-primary);
+    color: var(--primary);
+}

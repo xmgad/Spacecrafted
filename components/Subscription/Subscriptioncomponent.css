@@ -1,0 +1,14 @@
+.subscription-manager {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+
+.subscription-manager button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.subscription-manager form {
+    margin-top: 20px;
+}
