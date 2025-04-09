@@ -1,0 +1,16 @@
+@import  '../../styles/variables.css';
+
+.registration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  background-color: var(--dark-background);
+  padding-top: 80px; /* Ensure this matches the navbar height */
+  min-height: 100vh;
+}
+
+.registration-image {
+  width: 50%;
+  justify-self: flex-start;
+}

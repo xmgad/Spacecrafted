@@ -1,0 +1,109 @@
+@import '../../styles/variables.css';
+
+
+.sign-in-page {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    /* padding-top: 100px; Adjust padding to account for fixed navbar height */
+  }
+  
+  .sign-in-page__colored-section {
+    width: 100%;
+    height: 65vh;
+    background: radial-gradient(172.44% 67.18% at 56.93% 16.11%, #dd7864 16.67%, rgba(144, 224, 255, 0.00) 48.34%), 
+                radial-gradient(33.4% 38.49% at 56.66% 50%, #FF333D 44.79%, rgba(169, 96, 238, 0.00) 83.19%), 
+                radial-gradient(23.03% 13.73% at 6.58% 67.25%, #AFE9FF 0%, #90E0FF 41.45%, rgba(144, 224, 255, 0.00) 100%), 
+                radial-gradient(25.3% 48.59% at 19.59% 56.88%, #B8EBFF 0%, #90E0FF 60.58%, rgba(169, 96, 238, 0.00) 83.24%), 
+                radial-gradient(23.56% 17.93% at 7.65% 84.98%, #A960EE 25.96%, rgba(255, 51, 61, 0.00) 100%), 
+                radial-gradient(39.14% 40.96% at 19.29% 57.22%, rgba(144, 224, 255, 0.10) 50.74%, rgba(169, 96, 238, 0.00) 100%), 
+                radial-gradient(35.12% 24.99% at 45.83% 17.78%, #857045 31.7%, rgba(238, 117, 92, 0.00) 100%), 
+                radial-gradient(62.3% 36.2% at 0% 100%, #FF333D 19.21%, rgba(183, 120, 224, 0.00) 54.54%), 
+                radial-gradient(46.35% 60.9% at 5.34% 39.33%, #be9a4b 41.18%, rgba(183, 120, 225, 0.00) 71.99%), 
+                conic-gradient(from 2deg at 22.11% 40.38%, #c1e7f7 178.26553344726562deg, rgba(169, 96, 238, 0.00) 360deg), 
+                radial-gradient(5% 5% at 60.58% 60.58%, #9e99a5 0%, #f7e2dc 25%);
+    background-blend-mode: hard-light, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow issues */
+  }
+
+ 
+  
+  .black-triangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 15%;
+    border-right: 100vw solid black; /* Black color for the right border */
+    border-top: 30vh solid transparent; /* Transparent color for the top border */
+    z-index: 0;
+  }
+
+
+  .sign-in-page__content {
+    width: 100%;
+    height: 45vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  
+  .sign-in-page__left-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transform: translateY(-100px)
+  }
+  
+  .sign-in-page__right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transform: translate(-10px, -20px);
+    /*transform: translateY(-50px)*/
+    
+  }
+  
+  .sign-in-page__title {
+    color: white;
+    font-family: Lato, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: -3px;
+    transform: translateX(100px);
+  }
+  
+  .sign-in-form {
+    width: 70%;
+    color: var(--on-dark-background);
+    height: 500px;
+  }
+  
+  .sign-in-button {
+    width: 70%;
+    margin-top: 50px;
+  }
+  
+  .sign-in-header {
+    font-weight: 500;
+    color: white;
+    transform: translate(-290px, -20px);
+  }
+  
+  .sign-in-error {
+    margin-top: 32px;
+  }

@@ -1,0 +1,15 @@
+.password-recovery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, rgba(246, 211, 101, 1) 0%, rgba(253, 160, 133, 1) 100%);
+}
+
+.password-recovery-form {
+    width: 25%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}

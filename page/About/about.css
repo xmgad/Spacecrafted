@@ -1,0 +1,53 @@
+.about-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+    /* Ensure it covers the full viewport height */
+    /* Apply the same background as body */
+    color: inherit;
+    /* Ensure the text color is consistent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    background: var(--colored-gradient);
+    background-blend-mode: hard-light, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal;
+    backdrop-filter: blur(12px);
+}
+
+.about-content {
+    max-width: 65%;
+    margin: 30px auto;
+    padding: 40px;
+    background: black;
+    border-radius: 8px;
+    z-index: 1;
+    position: relative;
+    top: 5vh;
+    /* Adjust the top position to sit higher */
+    margin-top: 120px;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    /* Increased font size for headings */
+    color: white;
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 18px;
+    /* Slightly larger body text */
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 20px;
+}

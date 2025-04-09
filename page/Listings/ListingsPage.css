@@ -1,0 +1,94 @@
+/* ListingsPage.css */
+@import "../../styles/variables.css";
+
+.listings-page {
+    display: flex;
+    min-height: 100vh;
+    background: var(--light-gradient-background);
+    padding-top: 80px;
+    width: 100%;
+}
+
+.listings-side-pane {
+    position: relative;
+    min-width: 25%;
+}
+
+.listings-side-header {
+    color: var(--dark-text);
+    margin-bottom: 18px;
+}
+
+.search-filters-side {
+    position: fixed;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding: 0px 32px;
+    width: 25%;
+    max-height: 70vh;
+}
+
+.listings-page-search {
+    margin: 12px 0px;
+}
+
+.listings-page-filters {
+    max-height: 60vh;
+}
+
+.listings-container {
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 5px;
+}
+
+.listings-header {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.listings-content {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.listings-list {
+    list-style: none;
+    padding: 0;
+}
+
+.listing-item {
+    margin-bottom: 20px;
+}
+
+.no-listings {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-listings p {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #280638;
+    opacity: 0.8;
+}
+
+.error {
+    color: var(--error);
+    margin: 20px 0;
+}
+
+.refresh-listings-btn {
+    margin-top: 12px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.refresh-listings-btn.hidden {
+    visibility: hidden;
+    opacity: 0;
+}

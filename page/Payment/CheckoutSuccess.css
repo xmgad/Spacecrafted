@@ -1,0 +1,80 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    20% {
+        background-position: 25% 50%;
+    }
+    40% {
+        background-position: 50% 50%;
+    }
+    60% {
+        background-position: 75% 50%;
+    }
+    80% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.checkout-success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--dark-background);
+    color: white;
+}
+
+.outline-box {
+    position: relative;
+    width: 50%; /* Adjust the width as needed */
+    padding: 50px; /* Adjust the padding as needed */
+    border: 5px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--dark-background), var(--dark-background)) padding-box,
+        radial-gradient(172.44% 67.18% at 56.93% 16.11%, #dd7864 16.67%, rgba(144, 224, 255, 0) 48.34%),
+        radial-gradient(33.4% 38.49% at 56.66% 50%, #ee33ff 44.79%, rgba(169, 96, 238, 0) 83.19%),
+        radial-gradient(23.03% 13.73% at 6.58% 67.25%, #afe9ff 0%, #90e0ff 41.45%, rgba(144, 224, 255, 0) 100%),
+        radial-gradient(25.3% 48.59% at 19.59% 56.88%, #b8ebff 0%, #90e0ff 60.58%, rgba(169, 96, 238, 0) 83.24%),
+        radial-gradient(23.56% 17.93% at 7.65% 84.98%, #a960ee 25.96%, rgba(255, 51, 61, 0) 100%),
+        radial-gradient(39.14% 40.96% at 19.29% 57.22%, rgba(144, 224, 255, 0.1) 50.74%, rgba(169, 96, 238, 0) 100%),
+        radial-gradient(35.12% 24.99% at 45.83% 17.78%, #857045 31.7%, rgba(238, 117, 92, 0) 100%),
+        radial-gradient(62.3% 36.2% at 0% 100%, #ff333d 19.21%, rgba(183, 120, 224, 0) 54.54%),
+        radial-gradient(46.35% 60.9% at 5.34% 39.33%, #be9a4b 41.18%, rgba(183, 120, 225, 0) 71.99%),
+        conic-gradient(from 2deg at 22.11% 40.38%, #c1e7f7 178.26553344726562deg, rgba(169, 96, 238, 0) 360deg),
+        radial-gradient(5% 5% at 60.58% 60.58%, #9e99a5 0%, #f7e2dc 25%);
+    background-blend-mode: hard-light, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal;
+    background-size: 400% 400%; /* Increase the background size for more dynamic movement */
+    animation: gradientAnimation 4s ease infinite; /* Reduce the duration for faster animation */
+}
+
+.success-box {
+    position: relative;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.success-box h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.success-box p {
+    font-size: 1.25rem;
+}
+
+.continue-button {
+    padding: 15px 30px;
+    font-size: 1.25rem;
+}

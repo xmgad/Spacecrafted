@@ -1,0 +1,11 @@
+.favorites-page {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.favorites-container {
+    padding: 32px;
+    flex-grow: 1;
+    background: var(--primary-gradient);
+}

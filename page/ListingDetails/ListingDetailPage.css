@@ -1,0 +1,62 @@
+@import '../../styles/variables.css';
+
+.listing-detail {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 80px;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    background: var(--light-gradient-background);
+    overflow-y: auto;
+}
+
+.detail-header {
+    display: flex;
+    padding: 20px 0px;
+    width: 85%;
+    box-sizing: border-box;
+}
+
+.detail-header h1 {
+    color: var(--dark-text);
+    padding: 5px 100px 5px 0px;
+}
+
+.listing-detail-content {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light-background-trn);
+    width: 85%;
+    flex-grow: 1;
+    margin: 0px 24px;
+    padding: 48px;
+    border-radius: 16px 16px 0px 0px;
+    align-self: center;
+    gap: 40px;
+    /* Space between image and details */
+}
+
+.listing-details-left-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 14px;
+    padding-top: 28px;
+}
+
+.listing-details-header {
+    font-size: 28px;
+    color: var(--dark-purple);
+    font-weight: 600;
+    margin: 20px 0px 6px 0px;
+}
+
+.listing-details-map {
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid var(--light-blue);
+    margin: 0px 8px;
+    width: auto;
+}

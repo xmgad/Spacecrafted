@@ -1,0 +1,1 @@
+export const isAgent = (user) => user.userType !== null && user.userType === "Agent"

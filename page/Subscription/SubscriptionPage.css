@@ -1,0 +1,20 @@
+@import '../../styles/variables.css';
+
+
+.subscription-manager {
+    padding: 20px;
+    margin-top: 60px;
+    background: var(--light-gradient-background);
+}
+
+
+.subscription-manager button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.subscription-manager form {
+    background: var(--light-gradient-background);
+    color: var(--on-dark-background);
+    margin-top: 20px;
+}

@@ -1,0 +1,67 @@
+.conversations-page {
+    display: flex;
+    padding-top: 80px;
+    background: var(--dark-gradient);
+    height: 100vh;
+    color: white;
+}
+
+.conversation-list-pane {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid var(--light-background-trn);
+    background-color: var(--dark-background);
+    position: fixed;
+}
+
+.conversation-list-header {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 12px 32px;
+}
+
+.conversation-list-icon {
+    width: 40px;
+    height: 40px;
+    stroke: white;
+    margin-right: 12px;
+}
+
+.conversation-list {
+    flex-grow: 1;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #5e2b7073;
+        border-radius: 10px;
+        
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+
+.conversation-list:hover {
+    &::-webkit-scrollbar-thumb {
+        background-color: #5e2b70;
+    }
+}
+
+/* Chat window */
+
+.conversation-window-container {
+    height: 100%;
+    margin-left: 25%;
+    flex-grow: 1;
+}
